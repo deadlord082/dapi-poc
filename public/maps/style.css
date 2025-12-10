@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #ffedb2;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+    
+    
+    h1 {
+    text-align: center;
+    padding: 10px;
+    }
+    
+    
+    #controls {
+    text-align: center;
+    margin-bottom: 10px;
+    }
+    
+    
+    #map {
+    height: 85vh;
+    width: 100vw;
+    border-top: 2px solid #333;
+    }

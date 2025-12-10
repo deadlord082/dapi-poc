@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Dapi – Landing Page</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+
+    <div class="left">
+        <h1>Dapi</h1>
+        <p>Le bon trajet ? <br>Celui qui ne te met pas de <strong>bâtons dans les roues</strong>.</p>
+
+        <div class="image-box">
+            <img src="https://img.freepik.com/photos-premium/homme-handicape-fauteuil-roulant-traversant-route-rue_179755-10806.jpg" alt="Accessibilité urbaine">
+        </div>
+
+        <p>Les GPS classiques voient des routes. Dapi voit les détails.<br> Nous transformons les barrières physiques invisibles sur une carte en données de navigation sécurisée.</p>
+    </div>
+
+    <div class="right">
+        <h2>Démonstration</h2>
+        <p>Testez la recherche d’itinéraires accessibles :</p>
+
+        <form action="maps">
+            <label for="mobility">Type de mobilité :</label>
+            <select id="mobility" name="mobility" required>
+                <option value="fauteuils">Fauteuil roulant</option>
+                <option value="cane">Canne ou déambulateur</option>
+                <option value="pieds">À pied</option>
+            </select>
+
+            <button type="submit">Rechercher un trajet</button>
+        </form>
+
+        <div class="stats" style="margin-top:2rem; display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+            <div style="background:#f0f7ff; padding:1rem; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+                <strong style="font-size:1.4rem; color:#0066cc;">14,5 M</strong>
+                <p style="margin-top:0.3rem; font-size:0.9rem; opacity:0.8;">Personnes déclarant une limitation fonctionnelle sévère</p>
+            </div>
+        
+            <div style="background:#f0fff4; padding:1rem; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+                <strong style="font-size:1.4rem; color:#00a23a;">4,6 M</strong>
+                <p style="margin-top:0.3rem; font-size:0.9rem; opacity:0.8;">Personnes avec des restrictions importantes de santé</p>
+            </div>
+        
+            <div style="background:#fff7e6; padding:1rem; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+                <strong style="font-size:1.4rem; color:#d68b00;">14,8 M€</strong>
+                <p style="margin-top:0.3rem; font-size:0.9rem; opacity:0.8;">Investissements dédiés aux mobilités douces en 2024</p>
+            </div>
+        
+            <div style="background:#ffeef0; padding:1rem; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+                <strong style="font-size:1.4rem; color:#cc0033;">436,7 M€</strong>
+                <p style="margin-top:0.3rem; font-size:0.9rem; opacity:0.8;">Budget total du poste « Mobilités » de Nantes Métropole</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
