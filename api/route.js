@@ -111,3 +111,17 @@ export default function handler(req, res) {
 
   return res.status(200).json({ path: coords });
 }
+
+function nearestNode(latlng) {
+  let nearest = null;
+  let minDist = Infinity;
+  for (const id in nodes) {
+      const n = nodes[id];
+      const d = (n.lat - latlng.lat)**2 + (n.lon - latlng.lng)**2;
+      if (d < minDist) {
+          minDist = d;
+          nearest = id;
+      }
+  }
+  return nearest;
+}
