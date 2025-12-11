@@ -3,23 +3,52 @@
 <head>
 <meta charset="UTF-8" />
 <title>Dapi</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 <link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
-    <h1>Dapi</h1>
 
-    <div id="controls">
-    <label>Mode :</label>
-    <select id="mode">
-    <option value="fast">Plus court</option>
-    <option value="safe">Plus sécurisé (accessibilité)</option>
-    </select>
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <button class="menu-btn">☰</button>
+
+        <div class="search-box">
+            <input type="text" placeholder="localisation" />
+        </div>
+
+        <button class="settings-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 19a7 7 0 1 0 0-14a7 7 0 0 0 0 14m0 0v2m-7-9H3m9-7V3m7 9h2"/></svg></button>
     </div>
 
-    <p>Clique sur la carte : 1er clic = départ, 2nd clic = arrivée</p>
-
+    <!-- MAP -->
     <div id="map"></div>
+
+    <!-- FLOATING RIGHT BUTTONS -->
+    <div class="fab-container">
+        <button class="fab"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m21.484 7.125l-9.022-5a1 1 0 0 0-.968 0l-8.978 4.96a1 1 0 0 0-.003 1.748l9.022 5.04a1 1 0 0 0 .973.001l8.978-5a1 1 0 0 0-.002-1.749"/><path fill="currentColor" d="m12 15.856l-8.515-4.73l-.971 1.748l9 5a1 1 0 0 0 .971 0l9-5l-.971-1.748z"/><path fill="currentColor" d="m12 19.856l-8.515-4.73l-.971 1.748l9 5a1 1 0 0 0 .971 0l9-5l-.971-1.748z"/></svg></button>
+        <button class="fab"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14 16l1.32 1.76C14.32 19.68 12.31 21 10 21c-3.31 0-6-2.69-6-6c0-2.43 1.46-4.5 3.55-5.45l.21 2.17C6.71 12.44 6 13.63 6 15c0 2.21 1.79 4 4 4c1.86 0 3.41-1.28 3.86-3zm5.55.11l-1.25.62L15.5 13h-4.59l-.2-2H14V9h-3.5l-.3-3c1.01-.12 1.8-.96 1.8-2a2 2 0 1 0-4 0v.1L9.1 15h5.4l3.2 4.27l2.75-1.37z"/></svg></button>
+        <button class="fab">!</button>
+    </div>
+
+    <!-- BOTTOM SHEET -->
+    <div class="bottom-sheet">
+        <div class="route-info">
+            <div>
+                <strong>Commerce</strong><br>
+                <span>7 min</span>
+            </div>
+            <div class="route-end">Place Royale</div>
+        </div>
+
+        <div class="icons-row">
+            <div class="icon-card">200m</div>
+            <div class="icon-card">120m</div>
+            <div class="icon-card danger">⚡</div>
+        </div>
+    </div>
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="script.js"></script>
